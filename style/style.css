@@ -50,6 +50,7 @@
         
         ul {
             padding: 0;
+            margin: 0;
             list-style: none;
         }
         
@@ -62,7 +63,7 @@
         h2,
         h3,
         p {
-            padding: 0;
+            margin: 0;
         }
         
         .burger {
@@ -88,7 +89,7 @@
             line-height: 16px;
             letter-spacing: 0.02em;
             align-items: center;
-            z-index: 600;
+            z-index: 200;
         }
         
         .navigation__list {
@@ -126,6 +127,12 @@
             width: 24px;
             height: 24px;
             display: block;
+            transition: color .3s ease-in-out;
+            color: #fff;
+        }
+        
+        .social__link:hover {
+            color: #E90000;
         }
         
         .socials__link_fb {
@@ -223,7 +230,7 @@
             }
         }
         
-        footer {
+        .footer {
             position: relative;
             z-index: 100;
             padding-top: 10px;
@@ -244,7 +251,6 @@
         
         .footer_links {
             display: flex;
-            justify-content: center;
             gap: 21px;
             margin-bottom: 6px;
         }
@@ -267,10 +273,7 @@
             background-color: black;
             min-height: 144px;
             z-index: 80;
-            padding-top: 12px;
-            padding-bottom: 15px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding: 12px 20px 15px;
             transform: translateY(calc(100% - 25px));
             transition: transform 0.5s ease-in-out;
         }
